@@ -1,0 +1,48 @@
+package com.icinbank.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.icinbank.model.SavingAccount;
+import com.icinbank.service.SavingAccountService;
+@Service
+public class SavingAccountServiceImpl implements SavingAccountService {
+
+	@Override
+	public SavingAccount createSavingsAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<SavingAccount> getAllSavingsAccounts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deposit(Integer accNo, Long amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String withdraw(Integer accNo, Long amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SavingAccount getAccount(int accNo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Long retrieveAccountBalance(long accountId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	 
+}

@@ -1,0 +1,28 @@
+package com.icinbank.serviceimpl;
+
+public class RegisterService {
+	@Autowired
+	MyRepo repo;
+	@Autowired
+	private SavingsAccountService savingsAccountService;
+	
+	@Autowired
+	private PrimaryAccountService primaryAccountService; 
+		
+	
+	public User addUser(User user)
+	{
+		user.setPrimaryAccount(primaryAccountService.createPrimaryAccount());
+        user.setSavingsAccount(savingsAccountService.createSavingsAccount());
+        return repo.save(user);
+	}
+	
+	public User matchEmailPassword(String mailid, String password)
+	{
+		return repo.findByMailidAndPassword(mailid, password);
+	}
+	
+	public List<User> getUserDetails() {
+		return repo.findAll();
+	}
+}

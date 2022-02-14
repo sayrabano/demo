@@ -1,0 +1,33 @@
+package com.icinbank.serviceimpl;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.icinbank.model.PersonalTransaction;
+import com.icinbank.model.PrimaryAccount;
+import com.icinbank.repository.PersonalTransactionRepo;
+import com.icinbank.repository.PrimaryAccountRepo;
+import com.icinbank.service.PrimaryAccountService;
+import com.icinbank.service.TransactionService;
+import com.icinbank.service.UserService;
+
+public class PrimaryAccountServiceImpl implements PrimaryAccountService{
+	 @Autowired
+	 private PrimaryAccountRepo primaryAccountDao;
+	   
+	 @Autowired
+	 private UserService userService;
+	 
+	 @Autowired
+	 private TransactionService transactionService;
+	 
+	 @Autowired
+	 private PersonalTransactionRepo personalTransaction;
+	 
+     private static int nextAccountNumber = 22113344;
+     
+   
+
+
+}

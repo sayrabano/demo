@@ -1,0 +1,10 @@
+package com.icinbank.model;
+
+@ResponseStatus(code=HttpStatus.NOT_FOUND)
+public class AccountNotFoundException extends RuntimeException {
+
+    public AccountNotFoundException (String message) {
+        super(message);
+    }
+}
+

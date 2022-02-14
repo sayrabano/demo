@@ -1,0 +1,12 @@
+package com.icinbank.serviceimpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.icinbank.model.SavingAccount;
+import com.icinbank.repository.PersonalTransactionRepo;
+import com.icinbank.repository.SavingAccountRepo;
+import com.icinbank.service.UserService;
+
+public class SavingAccountServiceImpl {
+	 
+}

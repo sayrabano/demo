@@ -1,0 +1,5 @@
+package com.icinbank.service;
+
+public interface TransactionService {
+
+}

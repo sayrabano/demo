@@ -1,0 +1,5 @@
+package com.icinbank.model;
+
+public class User {
+
+}
